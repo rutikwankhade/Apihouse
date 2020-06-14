@@ -16,7 +16,5 @@
     "url": "https://github.com/rutikwankhade/free-apis/issues"
   },
   "homepage": "https://github.com/rutikwankhade/free-apis#readme",
-  "dependencies": {
-    "axios": "^0.19.2"
-  }
+  "dependencies": {}
 }

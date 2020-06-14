@@ -1,0 +1,47 @@
+.navbar{background-color: darkviolet;
+color:#ffffff;
+padding-left:50px;}
+
+.content{display:flex;
+flex-direction: column;}
+
+.main{
+margin:30px;
+padding:20px;}
+.illus{width:auto;
+    height:auto;}
+
+    .btn{
+        background-color: darkviolet;
+        color:#ffffff;
+        margin:10px;
+        display:inline;
+        justify-content: center;
+        align-items: center;
+    }
+.desc{font-size: 20px;}
+.input-data{margin-top:0px;}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1200px){
+
+
+
+
+    .illus{width:600px;
+        height:400px;}
+    .content{
+        flex-direction:row;}
+        .input-data{margin-top:180px;}
+        
+        
+}
