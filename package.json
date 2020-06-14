@@ -1,0 +1,22 @@
+{
+  "name": "free-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rutikwankhade/free-apis.git"
+  },
+  "author": "rutik wankhade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rutikwankhade/free-apis/issues"
+  },
+  "homepage": "https://github.com/rutikwankhade/free-apis#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
