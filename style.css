@@ -1,8 +1,8 @@
 .navbar{
     background-color: #6c5ce7;
     color:#ffffff;
-    padding-left:50px;
-}
+    padding:10px 10px 10px 20px;
+    }
 
 .content{
     display:flex;
@@ -18,78 +18,74 @@
     height:auto;
 }
 
-    .showBtn{
+.showBtn{
     background-color: #6c5ce7;
-        color:#ffffff;
-        margin:10px;
-        display:inline;
-        
-        
-        
-    }
+    color:#ffffff;
+    margin:10px;
+    display:inline;
+}
 .desc{font-size: 20px;}
 .input-data{margin-top:0px;}
-select{max-width: 350px;
-margin: auto;}
-
-.apis{background-color: #f2f2f2;
-display:flex;
-flex-direction: row;
-flex-wrap: wrap;
-padding-top: 20px;
-padding-bottom:20px;}
-
-.apibox{margin:auto;
-padding:0px 0px 10px 0px;
-margin-top:15px;
-height:auto;
-width:300px;
-text-align: center;
-box-shadow:  4px 4px 4px #ccb3ff;
-align-items: center;}
-
-.color{height:10px;
-background-color:  #9966ff
-
-
-
-
-;
-margin-bottom:8px;
+select{
+    max-width: 350px;
+    margin: auto;
 }
-.blue{color: #6c5ce7;
-margin-left:20px;
-margin-right:20px;}
-.link{background-color: #6c5ce7;
-color: ivory;
-width:100px;}
+
+.apis{
+    background-color: #f2f2f2;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+.apibox{
+    margin:auto;
+    padding:0px 0px 10px 0px;
+    margin-top:15px;
+    height:auto;
+    width:300px;
+    text-align: center;
+    box-shadow:  4px 4px 4px #ccb3ff;
+    align-items: center;
+}
+
+.blue{
+    color: #6c5ce7;
+    margin-left:20px;
+    margin-right:20px;
+}
+.link{
+    background-color: #6c5ce7;
+    color: ivory;
+    width:100px;
+}
 
 footer{
     height:40px;
     text-align: center;
     background-color:#ffffff;
-    
     padding:10px;
     font-size: 14px;
 }
 
 
 
-
-
 @media only screen and (min-width:1200px){
 
-
-
-
-    .illus{width:600px;
-        height:400px;}
-    .content{
-        flex-direction:row;}
-        .input-data{margin-top:180px;}
-        
-      .apis{padding-left:150px;
+    .navbar{padding-left:50px;}
+    .illus{
+        width:600px;
+        height:400px;
+    }
+    .content{flex-direction:row;}
+    .input-data{margin-top:180px;}
+    .apis{
+        padding-left:150px;
         padding-right:150px;
- }  
- .apibox{margin:20px;}
+    }  
+    .apibox{margin:20px;}
+
+
 }
