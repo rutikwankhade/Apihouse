@@ -1,6 +1,7 @@
 let input=document.querySelector('.categories');
 
 async function getApis(){
+    apiList.innerHTML="";
     let category=input.value;
 
      fetch(`https://api.publicapis.org/entries?category=${category}&https=true`)
@@ -14,6 +15,7 @@ async function getApis(){
 
             let entries=data.entries;
             console.log(entries);
+
             entries.forEach(el => {
             if(el.Auth=="")
             el.Auth='No Auth';
