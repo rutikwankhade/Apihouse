@@ -10,12 +10,14 @@ async function getApis(){
         return data;})
         .then(data=>{
             console.log(data);
-            let count=data.count;
+            count.textContent=`${data.count} Apis found`;
 
             let entries=data.entries;
             console.log(entries);
             entries.forEach(el => {
-            displayApi(el);
+            if(el.Auth=="")
+            el.Auth='No Auth';
+                displayApi(el);
 
         
             });
@@ -25,6 +27,7 @@ async function getApis(){
     
     
 }
+let count=document.querySelector('.count');
 
 document.querySelector('.showBtn').addEventListener('click',getApis );
 let apiList=document.querySelector('.apis');
@@ -33,12 +36,10 @@ const displayApi =(el)=>{
 
     let markup=` 
     <div class="apibox card">
-       <div class="color"></div>
-       <h4>${el.API}</h4>
-       <p>Description</p>
-       <p class="float-left">auth</p><button class="btn link float-right">View</button>
+       <h4 class="mt-4">${el.API}</h4>
+       <p class="blue">${el.Description}</p>
+       <p class="float-left">Auth Type : ${el.Auth}</p><button class="btn link float-right">View</button>
     </div>
  `;
-
 apiList.insertAdjacentHTML('beforeend',markup)
 }
