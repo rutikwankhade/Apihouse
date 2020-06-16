@@ -1,13 +1,30 @@
 let input=document.querySelector('.categories');
 let count=document.querySelector('.count');
 let apiList=document.querySelector('.apis');
-
+let loaderHTML=document.querySelector('.loader');
 document.querySelector('.showBtn').addEventListener('click',getApis );
 
+const renderLoader=()=>{
+  let loader=`
+      <div class="spinner-border spinner" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      `;
+  loaderHTML.insertAdjacentHTML('beforeend',loader);
+}
+
+const clearLoader=()=>{
+  let spinner=document.querySelector('.spinner');
+  if(spinner){
+    spinner.parentElement.removeChild(spinner);
+  }
+
+}
 async function getApis(){
       apiList.innerHTML="";
+      count.textContent="";
       let category=input.value;
-
+      renderLoader();
       fetch(`https://api.publicapis.org/entries?category=${category}&https=true`)
     
       .then(apis=>{
@@ -15,12 +32,13 @@ async function getApis(){
              return data;}
             )
        .then(data=>{
+
             console.log(data);
             count.textContent=`${data.count} Apis found`;
 
             let entries=data.entries;
             console.log(entries);
-
+            clearLoader();
             entries.forEach(el => {
               if(el.Auth=="")
                 el.Auth='No Auth';
@@ -47,3 +65,11 @@ async function getApis(){
         
         apiList.insertAdjacentHTML('beforeend',markup)
 }
+
+
+
+
+
+// push added loaderd animations
+// add readme
+// update portfolio with this project
