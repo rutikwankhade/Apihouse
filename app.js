@@ -73,7 +73,6 @@ async function getApis(){
 
 
 
-// add animations
+
 // add readme
-//change error message
 // update portfolio with this project
