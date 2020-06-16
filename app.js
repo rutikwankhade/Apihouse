@@ -48,14 +48,17 @@ async function getApis(){
             
             })
 
-        .catch(error =>alert(error))    
+            .catch(error=>{
+              if(error){
+                alert("Sorry, Something went wrong !");
+              }})
           }
           
           
     const displayApi =(el)=>{
 
         let markup=` 
-        <div class="apibox card">
+        <div class="apibox card " data-aos="fade-up">
             <h4 class="mt-4">${el.API}</h4>
             <p class="blue">${el.Description}</p>
             <p class="float-left">Auth Type : ${el.Auth}</p>
@@ -70,6 +73,7 @@ async function getApis(){
 
 
 
-// push added loaderd animations
+// add animations
 // add readme
+//change error message
 // update portfolio with this project
