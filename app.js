@@ -2,6 +2,7 @@ let input=document.querySelector('.categories');
 let count=document.querySelector('.count');
 let apiList=document.querySelector('.apis');
 let loaderHTML=document.querySelector('.loader');
+let scrollToTopBtn=document.querySelector('#top');
 document.querySelector('.showBtn').addEventListener('click',getApis );
 
 const renderLoader=()=>{
@@ -24,6 +25,7 @@ async function getApis(){
       apiList.innerHTML="";
       count.textContent="";
       let category=input.value;
+      
       renderLoader();
       fetch(`https://api.publicapis.org/entries?category=${category}&https=true`)
     
@@ -69,10 +71,23 @@ async function getApis(){
         apiList.insertAdjacentHTML('beforeend',markup)
 }
 
+//Scroll to top button
 
+let displayScrollBtn =()=>{
+    let y=window.scrollY;
+      if (y > 200) {scrollToTopBtn.classList.replace("hide","show")}
+      else{scrollToTopBtn.classList.replace("show","hide");}
+  }
+window.addEventListener('scroll', displayScrollBtn);
 
+scrollToTopBtn.addEventListener('click',function(){
+  console.log('click')
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior:'smooth'
+  })
+});
 
-
-
-// add readme
+//todo
 // update portfolio with this project

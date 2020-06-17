@@ -61,6 +61,21 @@ select{
     color: ivory;
     width:100px;
 }
+.upArrow{
+    position:fixed;
+    right:10px;
+    bottom:20px;
+    height:30px;
+    width:30px;
+    display:none
+}
+.show {
+ display: inline-flex;
+  }
+  
+  .hide {
+   display:none;
+  }
 
 footer{
     height:40px;
