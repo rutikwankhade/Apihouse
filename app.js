@@ -35,11 +35,11 @@ async function getApis(){
             )
        .then(data=>{
 
-            console.log(data);
+            // console.log(data);
             count.textContent=`${data.count} Apis found`;
 
             let entries=data.entries;
-            console.log(entries);
+            // console.log(entries);
             clearLoader();
             entries.forEach(el => {
               if(el.Auth=="")
@@ -81,7 +81,6 @@ let displayScrollBtn =()=>{
 window.addEventListener('scroll', displayScrollBtn);
 
 scrollToTopBtn.addEventListener('click',function(){
-  console.log('click')
   window.scrollTo({
     top:0,
     left:0,

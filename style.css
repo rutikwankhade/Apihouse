@@ -65,8 +65,8 @@ select{
     position:fixed;
     right:10px;
     bottom:20px;
-    height:30px;
-    width:30px;
+    height:40px;
+    width:40px;
     display:none
 }
 .show {
@@ -80,11 +80,12 @@ select{
 footer{
     height:40px;
     text-align: center;
-    background-color:#ffffff;
+    background-color: #ffffff;
     padding:10px;
     font-size: 14px;
 }
-
+.logo{height:30px;
+width:30px;}
 
 
 @media only screen and (min-width:1200px){
@@ -102,5 +103,7 @@ footer{
     }  
     .apibox{margin:20px;}
 
+    .upArrow{height:60px;
+    width:60px;}
 
 }
