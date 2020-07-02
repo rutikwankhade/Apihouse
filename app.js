@@ -64,7 +64,7 @@ async function getApis(){
             <h4 class="mt-4">${el.API}</h4>
             <p class="blue">${el.Description}</p>
             <p class="float-left">Auth Type : ${el.Auth}</p>
-            <a href=${el.Link} class="btn link float-right" >View</a>
+            <a href=${el.Link} class="btn link float-right" target="_blanck" >View</a>
         </div>
         `;
         
