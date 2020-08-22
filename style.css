@@ -47,8 +47,11 @@ select{
     height:auto;
     width:300px;
     text-align: center;
-    box-shadow:  4px 4px 4px #ccb3ff;
+    box-shadow:  6px 6px 10px #ccb3ff;
     align-items: center;
+    border-top: 4px solid #6c5ce7;
+    border-radius:8px;
+
 }
 
 .blue{
