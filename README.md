@@ -9,13 +9,11 @@ Get collective list of free APIs for use in software and web development.
 
 <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Frutikwankhade%2FApihouse">
 
-<kbd>
-<img src="https://user-images.githubusercontent.com/47467468/131892113-be37f1b6-6450-4a87-81b5-59636d08a62c.png"/>
-</kbd>
+<img src="https://user-images.githubusercontent.com/47467468/131892996-898cd02d-a27d-4d5d-93ee-3c4232645952.png"/>
 
-<kbd>
-<img src="https://user-images.githubusercontent.com/47467468/131892319-c79007c0-4f78-4d23-b69a-7e6eb1633493.png"/>
-</kbd>
+
+<img src="https://user-images.githubusercontent.com/47467468/131893530-72443eb2-7a4d-4209-a72a-ca1969f3c4e0.png"/>
+
 
 
 ## 👨‍💻 Built with
