@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="img/favicon.png">
-    <title>Apihouse</title>
-</head>
-<body>
-    <nav class="navbar">
-       <h3><img src="img/favicon.png" class="logo"> Apihouse</h3>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <link rel="icon" href="img/favicon.png">
+        <title>Apihouse</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <h3><img src="img/favicon.png" class="logo">
+                Apihouse</h3>
+        </nav>
 
-      <div class="content">
-          <div class="main">
-             <img src="img/undraw_data_xmfy.svg" class="img-fluid illus">    
-          </div>
-          
-          <div class="main input-data text-center">
-              <p class="desc">Get collective list of free APIs for use in software and web development.</p>
-              <select class="form-control categories">
-                <option>Select Category</option>
-                
-                <option>Animals</option>
-                <option>Anime</option>
-                <option>Anti-Malware</option>
-                <option>Art</option>
-                <option>Books</option>
-                <option>Business</option>
-                <option>Calendar</option>
-                <option>Cloud Storage</option>
-                <option>Continuous Integration</option>
-                <option>Cryptocurrency</option>
-                <option>Currency Exchange</option>
-                <option>Data Validation</option>
-                <option>Development</option>
-                <option>Dictionaries</option>
-                <option>Environment</option>
-                <option>Events</option>
-                <option>Finance</option>
-                <option>Food</option>
-                <option>Games</option>
-                <option>Geocoding</option>
-                <option>Government</option>
-                <option>Health</option>
-                <option>Jobs</option>
-                <option>Machine Learning</option>
-                <option>Music</option>
-                <option>News</option>
-                <option>Open Data</option>
-                <option>Open Source Projects</option>
-                <option>Patent</option>
-                <option>Personality</option>
-                <option>Photography</option>
-                <option>Productivity</option>
-                <option>Science</option>
-                <option>Security</option>
-                <option>Shopping</option>
-                <option>Social</option>
-                <option>Sports</option>
-                <option>Test Data</option>
-                <option>Text Analysis</option>
-                <option>Tracking</option>
-                <option>Transportation</option>
-                <option>URL Shorteners</option>
-                <option>Vehicle</option>
-                <option>Video</option>
-                <option>Weather</option>
+        <div class="content">
+            <div class="main">
+                <img src="img/undraw_data_xmfy.svg" class="img-fluid hero">
+            </div>
 
-               </select>
+            <div class="main input-data text-center">
+                <h1 class="desc">Get collective list of free APIs for your next side project.</h1>
 
-              <button type="button" class="btn showBtn">Show Apis</button>
-              <h5 class="count mt-4"></h5>
-              <div class="text-center loader"></div>
+                <select class="form-control categories">
+                    <option>Select Category</option>
 
-           </div>
-      </div>
+                    <option>Animals</option>
+                    <option>Anime</option>
+                    <option>Anti-Malware</option>
+                    <option>Art</option>
+                    <option>Books</option>
+                    <option>Business</option>
+                    <option>Calendar</option>
+                    <option>Cloud Storage</option>
+                    <option>Continuous Integration</option>
+                    <option>Cryptocurrency</option>
+                    <option>Currency Exchange</option>
+                    <option>Data Validation</option>
+                    <option>Development</option>
+                    <option>Dictionaries</option>
+                    <option>Environment</option>
+                    <option>Events</option>
+                    <option>Finance</option>
+                    <option>Food</option>
+                    <option>Games</option>
+                    <option>Geocoding</option>
+                    <option>Government</option>
+                    <option>Health</option>
+                    <option>Jobs</option>
+                    <option>Machine Learning</option>
+                    <option>Music</option>
+                    <option>News</option>
+                    <option>Open Data</option>
+                    <option>Open Source Projects</option>
+                    <option>Patent</option>
+                    <option>Personality</option>
+                    <option>Photography</option>
+                    <option>Productivity</option>
+                    <option>Science</option>
+                    <option>Security</option>
+                    <option>Shopping</option>
+                    <option>Social</option>
+                    <option>Sports</option>
+                    <option>Test Data</option>
+                    <option>Text Analysis</option>
+                    <option>Tracking</option>
+                    <option>Transportation</option>
+                    <option>URL Shorteners</option>
+                    <option>Vehicle</option>
+                    <option>Video</option>
+                    <option>Weather</option>
 
-      <div class="apis">
+                </select>
 
-      </div>
-      <img src="img/up-arrow.png" class="upArrow hide" id="top">
+                <button type="button" class="btn show-btn">Show APIs</button>
+                <h5 class="count mt-4"></h5>
+                <div class="text-center loader"></div>
 
-      <footer class="bottom">Made with &#10084; By <a href="https://rutikw.now.sh">Rutik Wankhade</a></footer>
+            </div>
+        </div>
 
-</body>
-<script src="app.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+        <div class="apis"></div>
+        <img src="img/up-arrow.png" class="up-arrow hide" id="top">
+
+        <footer class="bottom">Made with &#10084; By
+            <a href="https://rutikwankhade.dev" target="_blank">Rutik Wankhade</a>
+        </footer>
+
+    </body>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>
