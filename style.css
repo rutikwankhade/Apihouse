@@ -167,6 +167,7 @@ footer {
         align-items: center;
     }
     .apis {
+        justify-content: center;
         padding-left: 150px;
         padding-right: 150px;
     }

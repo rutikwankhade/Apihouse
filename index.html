@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-        <link rel="icon" href="img/favicon.png">
+        <link
+        rel="icon" href="img/favicon.png"/>
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://apihouse.vercel.app/"/>
+        <meta property="og:title" content="Get collective list of free APIs for your next side project."/>
+        <meta property="og:description" content=""/>
+        <meta property="og:image" content="https://user-images.githubusercontent.com/47467468/131894302-d0a29bd8-5a3c-43f8-a072-b0486f056a9c.png"/>
+
         <title>Apihouse</title>
     </head>
     <body>
         <nav class="navbar">
-            <h3><img src="img/favicon.png" class="logo">
+            <h3><img src="img/favicon.png" class="logo"/>
                 Apihouse</h3>
-                <a href="https://github.com/rutikwankhade/Apihouse" target="_blank" class="star-btn">⭐ Star on Github</a>
+            <a href="https://github.com/rutikwankhade/Apihouse" target="_blank" class="star-btn">⭐ Star on Github</a>
         </nav>
 
         <div class="content">
             <div class="main">
-                <img src="img/undraw_data_xmfy.svg" class="img-fluid hero">
+                <img src="img/undraw_data_xmfy.svg" class="img-fluid hero"/>
             </div>
 
             <div class="main input-data text-center">
-                <h1 class="desc">Get collective list of free APIs for your next side project.</h1>
+                <h1 class="desc">
+                    Get collective list of free APIs for your next side project.
+                </h1>
 
                 <select class="form-control categories">
                     <option>Select Category</option>
@@ -72,23 +82,21 @@
                     <option>Vehicle</option>
                     <option>Video</option>
                     <option>Weather</option>
-
                 </select>
 
                 <button type="button" class="btn show-btn">Show APIs</button>
                 <h5 class="count mt-4"></h5>
                 <div class="text-center loader"></div>
-
             </div>
         </div>
 
         <div class="apis"></div>
-        <img src="img/up-arrow.png" class="up-arrow hide" id="top">
+        <img src="img/up-arrow.png" class="up-arrow hide" id="top"/>
 
-        <footer class="bottom">Made with &#10084; By
+        <footer class="bottom">
+            Made with &#10084; By
             <a href="https://rutikwankhade.dev" target="_blank">Rutik Wankhade</a>
         </footer>
-
     </body>
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
