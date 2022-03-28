@@ -6,11 +6,7 @@ let scrollToTopBtn = document.querySelector('#top');
 document.querySelector('.show-btn').addEventListener('click', getApis);
 
 const renderLoader = () => {
-  let loader = `
-      <div class="spinner-border spinner" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      `;
+  let loader = `<div class="spinner-border spinner" role="status"></div>`;
   loaderHTML.insertAdjacentHTML('beforeend', loader);
 }
 
@@ -42,12 +38,16 @@ async function getApis() {
       let entries = data.entries;
       // console.log(entries);
       clearLoader();
+
+
       entries.forEach(el => {
         if (el.Auth == "")
           el.Auth = 'No Auth';
 
         displayApi(el);
       });
+      window.scrollBy(0,300);
+
 
     })
 

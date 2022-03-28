@@ -1,32 +1,32 @@
-.navbar {
-    background-color: #6c5ce7;
-    color: #ffffff;
+.alert-msg {
+    background-color: #1d1d1d;
+    color: palegreen;
     padding: 10px;
 }
 
-.star-btn{
-    background-color: #262626;
-    padding:5px 10px 5px 10px;
-    color:#ffffff;
-    border-radius:5px;
-    font-weight:600;
-    margin-left:auto;
-    margin-right:10px;
+.navbar {
+    padding: 10px;
+    margin-top: 0;
 }
 
-.star-btn:hover{
+.star-btn {
+    background-color: #262626;
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.star-btn:hover {
     color: #ffffff;
     text-decoration: none;
     background-color: #1a1a1a;
 
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
 
 .main {
     margin: 30px;
@@ -38,20 +38,17 @@
     height: auto;
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
+
 
 .show-btn {
     background-color: #6c5ce7;
     color: #ffffff;
     display: inline;
     font-size: 22px;
-    border-radius: 6px;
+    border-radius: 50px;
     padding: 5px 20px 5px 20px;
-    margin: 10px;
+    margin: 14px;
+    font-weight: 600;
 }
 
 .show-btn:hover {
@@ -59,11 +56,7 @@
     color: #ffffff;
 }
 
-.desc {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+
 
 .input-data {
     margin-top: 0px;
@@ -141,7 +134,7 @@ footer {
     padding: 20px;
     font-size: 18px;
     bottom: 0;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .logo {
@@ -153,27 +146,33 @@ footer {
     .navbar {
         padding-left: 50px;
     }
+
     .desc {
         font-size: 40px;
         margin: 20px;
     }
+
     .hero {
         width: 600px;
         height: 400px;
     }
+
     .content {
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
+
     .apis {
         justify-content: center;
         padding-left: 150px;
         padding-right: 150px;
     }
+
     .apibox {
         margin: 20px;
     }
+
     .up-arrow {
         height: 60px;
         width: 60px;
