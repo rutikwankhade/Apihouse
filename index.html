@@ -1,132 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="img/favicon.png" />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://apihouse.vercel.app/" />
-    <meta
-      property="og:title"
-      content="Get collective list of free APIs for your next side project."
-    />
-    <meta property="og:description" content="" />
-    <meta
-      property="og:image"
-      content="https://user-images.githubusercontent.com/47467468/132079037-15f99a49-aa52-45ca-9d4b-50cb941499a3.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Apihouse</title>
-  </head>
-  <body>
-    <nav class="">
-      <div class="alert-msg text-center" role="alert">
-        The Public APIs project needs your support.
-        <a
-          class="fw-bold"
-          href="https://github.com/public-apis/public-apis/issues/3104"
-          target="_blank"
-          >Join the discussion</a
-        >
-        and help it stay alive!
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="img/favicon.png" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+  </style>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apihouse.vercel.app/" />
+  <meta property="og:title" content="Get collective list of free APIs for your next side project." />
+  <meta property="og:description" content="" />
+  <meta property="og:image"
+    content="https://user-images.githubusercontent.com/47467468/132079037-15f99a49-aa52-45ca-9d4b-50cb941499a3.png" />
+
+  <title>Apihouse</title>
+</head>
+
+<body>
+  <nav class="">
+    <div class="alert-msg text-center fixed-top container-fluid text-white fw-light" role="alert">
+      The Public APIs project needs your support.
+      <a class="fw-bold" href="https://github.com/public-apis/public-apis/issues/3104" target="_blank">Join the
+        discussion</a>
+      and help it stay alive!
+    </div>
+  </nav>
+
+  <div class="intro">
+    <div class="background-filter position-absolute"></div>
+    <div class="main-content pt-5 d-flex flex-column justify-content-between align-items-center">
+      <div class="navbar flex py-4 px-5 container-fluid">
+        <h4 class="fw-bold text-white brand-box">
+          <img src="img/favicon.png" class="brand-icon me-3" alt="" />
+          Apihouse
+        </h4>
+        <a href="https://github.com/rutikwankhade/Apihouse" target="_blank" class="star-btn px-4 py-3 rounded-pill bg-d local-shadow text-white">⭐ Star on Github</a>
       </div>
-      <div class="navbar flex">
-        <h4>📦 Apihouse</h4>
-        <a
-          href="https://github.com/rutikwankhade/Apihouse"
-          target="_blank"
-          class="star-btn"
-          >⭐ Star on Github</a
-        >
-      </div>
-    </nav>
 
-    <div class="flex flex-col justify-content-center">
-      <div class="main input-data text-center">
-        <h1 class="fw-bold display-2 my-5">
+      <div class="main container-fluid input-data text-center">
+        <h1 class="fw-bold display-2 text-center container py-3 text-white" id="intro-word">
           Get collective list of free APIs for your next side project.
         </h1>
 
         <div class="flex flex-row">
-          <select class="form-control categories">
-            <option>Select Category</option>
-
-            <option>Animals</option>
-            <option>Anime</option>
-            <option>Anti-Malware</option>
-            <option>Art</option>
-            <option>Books</option>
-            <option>Business</option>
-            <option>Calendar</option>
-            <option>Cloud Storage</option>
-            <option>Continuous Integration</option>
-            <option>Cryptocurrency</option>
-            <option>Currency Exchange</option>
-            <option>Data Validation</option>
-            <option>Development</option>
-            <option>Dictionaries</option>
-            <option>Environment</option>
-            <option>Events</option>
-            <option>Finance</option>
-            <option>Food</option>
-            <option>Games</option>
-            <option>Geocoding</option>
-            <option>Government</option>
-            <option>Health</option>
-            <option>Jobs</option>
-            <option>Machine Learning</option>
-            <option>Music</option>
-            <option>News</option>
-            <option>Open Data</option>
-            <option>Open Source Projects</option>
-            <option>Patent</option>
-            <option>Personality</option>
-            <option>Photography</option>
-            <option>Productivity</option>
-            <option>Science</option>
-            <option>Security</option>
-            <option>Shopping</option>
-            <option>Social</option>
-            <option>Sports</option>
-            <option>Test Data</option>
-            <option>Text Analysis</option>
-            <option>Tracking</option>
-            <option>Transportation</option>
-            <option>URL Shorteners</option>
-            <option>Vehicle</option>
-            <option>Video</option>
-            <option>Weather</option>
-          </select>
-
-          <button type="button" class="btn show-btn">Show APIs</button>
+          <div class="input-container py-5 pb-4 container">
+            <select class="form-control categories px-4 fs-4" name="apis-type">
+              <div class="select"></div>
+              <option value="Select option" selected>Select Category</option>
+              <option value="Animals">Animals</option>
+              <option value="Anime">Anime</option>
+              <option value="Anti-Malware">Anti-Malware</option>
+              <option value="Art">Art</option>
+              <option value="Books">Books</option>
+              <option value="Business">Business</option>
+              <option value="Calendar">Calendar</option>
+              <option value="cloud Storage">Cloud Storage</option>
+              <option value="Continuous Integration">Continuous Integration</option>
+              <option value="Cryptocurrency">Cryptocurrency</option>
+              <option value="Currency Exchange">Currency Exchange</option>
+              <option value="Data Validation">Data Validation</option>
+              <option value="Development">Development</option>
+              <option value="Dictionaries">Dictionaries</option>
+              <option value="Environment">Environment</option>
+              <option value="Events">Events</option>
+              <option value="Finance">Finance</option>
+              <option value="Food">Food</option>
+              <option value="Games">Games</option>
+              <option value="Geocoding">Geocoding</option>
+              <option value="Government">Government</option>
+              <option value="Health">Health</option>
+              <option value="Jobs">Jobs</option>
+              <option value="Machine Learning">Machine Learning</option>
+              <option value="Music">Music</option>
+              <option value="News">News</option>
+              <option value="Open Data">Open Data</option>
+              <option value="open Source project">Open Source Projects</option>
+              <option value="Patent">Patent</option>
+              <option value="Personality">Personality</option>
+              <option value="Photography">Photography</option>
+              <option value="Productivity">Productivity</option>
+              <option value="Science">Science</option>
+              <option value="Security">Security</option>
+              <option value="Shopping">Shopping</option>
+              <option value="Social">Social</option>
+              <option value="Sports">Sports</option>
+              <option value="Test Data">Test Data</option>
+              <option value="text Analysis">Text Analysis</option>
+              <option value="Tracking">Tracking</option>
+              <option value="Transportation">Transportation</option>
+              <option value="URL Shorteners">URL Shorteners</option>
+              <option value="Vehicle">Vehicle</option>
+              <option value="Video">Video</option>
+              <option value="Weather">Weather</option>
+            </select>
+          </div>
+          <button type="button" class="btn show-btn px-5 py-2 local-shadow bg-p rounded-pill text-white fs-4">Show APIs</button>
         </div>
 
-        <h5 class="count mt-4"></h5>
+        <h5 class="count py-5"></h5>
         <div class="text-center loader"></div>
       </div>
     </div>
+  </div>
 
-    <div class="apis"></div>
+  <div class="content-area d-flex flex-column justify-content-between align-items-center">
+    <div class="apis pt-5 px-0 container d-flex flex-row justify-content-center"></div>
     <img src="img/up-arrow.png" class="up-arrow hide" id="top" />
 
-    <footer class="bottom">
+    <footer class="bottom py-2 text-center mt-5">
       Made with &#10084; By
       <a href="https://rutikwankhade.dev" target="_blank">Rutik Wankhade</a>
     </footer>
-  </body>
-  <script src="app.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  </div>
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </html>

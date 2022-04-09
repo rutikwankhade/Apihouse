@@ -1,180 +1,250 @@
+:root {
+  --color-p: #4f23ff;
+  --color-p-hover: #2400b6;
+  --color-dark: rgba(41, 41, 41, 1);
+  --color-light: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.color-p {
+  color: var(--color-p) !important;
+}
+
+.bg-p {
+  background-color: var(--color-p) !important;
+}
+
+.bg-p:hover {
+  background-color: var(--color-p-hover) !important;
+}
+
+img {
+  object-fit: cover;
+}
+
+.local-shadow {
+  box-shadow: 5px 5px 5px rgba(41, 41, 41, 0.25);
+}
+
+.local-shadow-2 {
+  box-shadow: 0px 0px 15px rgba(41, 41, 41, 0.05);
+}
+
+.local-shadow-2:hover {
+  box-shadow: 0px 0px 15px rgba(41, 41, 41, 0.1);
+}
+
 .alert-msg {
-    background-color: #1d1d1d;
-    color: palegreen;
-    padding: 10px;
+    background-color: var(--color-dark);
+  padding: 10px;
+}
+
+.brand-icon {
+  width: 50px;
+  height: auto;
+}
+
+.intro {
+  min-height: 700px;
+  height: 80vh;
+  background: linear-gradient(
+    248.41deg,
+    #00f0ff 14.5%,
+    #4f23ff 55.64%,
+    #9e00ff 80.41%
+  );
+  position: relative;
+  width: 100%;
+}
+
+#intro-word {
+  font-family: "Rowdies", cursive !important;
+  mix-blend-mode: overlay;
+  text-shadow: 5px 5px 5px rgba(41, 41, 41, 0.75);
+  width: 100%;
 }
 
 .navbar {
-    padding: 10px;
-    margin-top: 0;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.bg-d {
+  background-color: rgba(41, 41, 41, 0.75) !important;
+}
+
+.bg-d:hover {
+  background-color: var(--color-dark) !important;
+}
+
+.background-filter {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, .3) 0%,
+    rgba(30, 30, 30, .7) 100%
+  );
 }
 
 .star-btn {
-    background-color: #262626;
-    padding: 5px 10px 5px 10px;
-    color: #ffffff;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-left: auto;
-    margin-right: 10px;
-    text-decoration: none;
+  margin-left: auto;
+  font-weight: 600;
+  text-decoration: none !important;
 }
-
-.star-btn:hover {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #1a1a1a;
-
-}
-
 
 .main {
-    margin: 30px;
-    padding: 20px;
+  margin: 30px;
+  padding: 20px;
 }
 
-.hero {
-    width: auto;
-    height: auto;
-}
-
-
-
-.show-btn {
-    background-color: #6c5ce7;
-    color: #ffffff;
-    display: inline;
-    font-size: 22px;
-    border-radius: 50px;
-    padding: 5px 20px 5px 20px;
-    margin: 14px;
-    font-weight: 600;
+.main-content {
+  position: relative;
+  height: 100%;
 }
 
 .show-btn:hover {
-    background-color: #4b37e1;
-    color: #ffffff;
+  background-color: var(--color-p-hover);
+  color: var(--color-light);
 }
 
-
-
 .input-data {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 select {
-    max-width: 350px;
-    margin: auto;
+  min-width: 300px;
+  max-width: 50%;
+  margin: auto;
+  border: none;
+  border-radius: 15px !important;
+  position: relative;
+  padding: 10px 0 !important;
 }
 
-.categories {
-    font-size: 20px;
+option {
+  border-radius: 10px;
 }
 
 .apis {
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
+  flex-wrap: wrap;
 }
 
 .apibox {
-    margin: auto;
-    padding: 0px 0px 10px 0px;
-    margin-top: 15px;
-    height: auto;
-    width: 300px;
-    text-align: center;
-    box-shadow: 6px 6px 10px #ccb3ff;
-    align-items: center;
-    border-top: 4px solid #6c5ce7;
-    border-radius: 8px;
-}
-
-.blue {
-    color: #6c5ce7;
-    margin-left: 20px;
-    margin-right: 20px;
+  margin: auto;
+  margin-top: 15px;
+  height: auto;
+  width: calc(100% / 4);
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 0;
 }
 
 .link {
-    background-color: #6c5ce7;
-    color: #ffffff;
-    width: 100px;
-    font-weight: 600;
+  background-color: #6c5ce7;
+  color: #ffffff;
+  width: 100px;
+  font-weight: 600;
 }
 
 .link:hover {
-    color: #ffffff;
-    background-color: #ff4dff;
+  color: #ffffff;
+  background-color: #ff4dff;
+}
+
+.card {
+  border: none;
+}
+
+.card-child {
+  border-radius: 10px;
 }
 
 .up-arrow {
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-    height: 40px;
-    width: 40px;
-    display: none;
-    cursor: pointer;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  height: 40px;
+  width: 40px;
+  display: none;
+  cursor: pointer;
 }
 
 .show {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 footer {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 20px;
-    font-size: 18px;
-    bottom: 0;
-    font-weight: 600;
+  width: 100%;
+  font-weight: 600;
 }
 
 .logo {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
-@media only screen and (min-width:1200px) {
-    .navbar {
-        padding-left: 50px;
-    }
+@media only screen and (min-width: 1200px) {
+  .up-arrow {
+    height: 60px;
+    width: 60px;
+  }
+}
 
-    .desc {
-        font-size: 40px;
-        margin: 20px;
-    }
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 16px;
+  }
 
-    .hero {
-        width: 600px;
-        height: 400px;
-    }
+  .alert-msg {
+    font-size: 12px;
+    margin: 0 !important;
+    width: 100vw !important;
+  }
 
-    .content {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+  .navbar {
+    padding: 25px !important;
+    margin-top: 1rem;
+  }
 
-    .apis {
-        justify-content: center;
-        padding-left: 150px;
-        padding-right: 150px;
-    }
+  .brand-box {
+    font-size: 1rem;
+  }
 
-    .apibox {
-        margin: 20px;
-    }
+  .brand-icon {
+    width: 35px;
+    margin-right: 5px !important;
+  }
 
-    .up-arrow {
-        height: 60px;
-        width: 60px;
-    }
+  .star-btn {
+    padding: 8px 15px !important;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .show-btn {
+    font-size: 1rem !important;
+  }
 }
