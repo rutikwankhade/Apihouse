@@ -17,45 +17,28 @@ const clearLoader = () => {
   }
 
 }
+// async and await 
 async function getApis() {
-  apiList.innerHTML = "";
+  try{
+     apiList.innerHTML = "";
   count.textContent = "";
   let category = input.value;
-
   renderLoader();
-  fetch(`https://api.publicapis.org/entries?category=${category}&https=true`)
+  const fetchdata = await fetch(`https://api.publicapis.org/entries?category=${category}&https=true`)
+  const data = await fetchdata.json();
+  count.textContent = `${data.count} Apis found`;
+  let entries = data.entries;
+  clearLoader();
+  entries.forEach(el => {
+    if (el.Auth == "")
+      el.Auth = 'No Auth';
 
-    .then(apis => {
-      data = apis.json();
-      return data;
-    }
-    )
-    .then(data => {
-
-      // console.log(data);
-      count.textContent = `${data.count} Apis found`;
-
-      let entries = data.entries;
-      // console.log(entries);
-      clearLoader();
-
-
-      entries.forEach(el => {
-        if (el.Auth == "")
-          el.Auth = 'No Auth';
-
-        displayApi(el);
-      });
-      window.scrollBy(0,300);
-
-
-    })
-
-    .catch(error => {
-      if (error) {
-        alert("Sorry, Something went wrong !");
-      }
-    })
+    displayApi(el);
+  });
+  window.scrollBy(0,300);
+  }catch(error){
+    alert("Sorry, Something went wrong !");
+  }
 }
 
 
